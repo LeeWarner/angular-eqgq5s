@@ -16,6 +16,7 @@
     "@syncfusion/ej2-angular-progressbar": "^19.3.53",
     "@syncfusion/ej2-base": "19.3.54",
     "@syncfusion/ej2-progressbar": "^19.3.53",
+    "@syncfusion/ej2-svg-base": "^19.3.53",
     "core-js": "2.6.9",
     "rxjs": "7.1.0",
     "rxjs-compat": "6.6.7",

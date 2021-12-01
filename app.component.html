@@ -3,18 +3,28 @@
     <div class="col-lg-3 col-md-3 col-3" align="center">
       <div id="track-container">
         <ejs-progressbar
-          #circular2
-          id="circular3"
-          [type]="type2"
-          [maximum]="max2"
-          [minimum]="min2"
-          [value]="value2"
+          #donut
+          id="donut"
+          [type]="type"
+          [maximum]="max"
+          [minimum]="min"
+          [value]="value"
           [width]="width"
           [height]="height"
           [animation]="animation"
           (load)="load($event)"
-          [segmentCount]="segmentcount2"
+          [segmentCount]="segmentcount"
+          [trackThickness]="thickness"
+          [progressColor]="'rgb(235,235,235)'"
+          [trackColor]="'rgb(168,162,161)'"
+          [progressThickness]="thickness"
         >
+          <e-progressbar-annotations>
+            <e-progressbar-annotation
+              content='<span style="font-size:35px;font-weight:bold;">4/15</span>'
+            >
+            </e-progressbar-annotation>
+          </e-progressbar-annotations>
         </ejs-progressbar>
       </div>
       <div class="progress-text-align">Segment</div>
