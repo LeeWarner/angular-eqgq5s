@@ -1,0 +1,47 @@
+<div class="control-section">
+  <div class="row" style="margin-top: 8%;">
+    <div class="col-lg-3 col-md-3 col-3" align="center">
+      <div id="track-container">
+        <ejs-progressbar
+          #circular2
+          id="circular3"
+          [type]="type2"
+          [maximum]="max2"
+          [minimum]="min2"
+          [value]="value2"
+          [width]="width"
+          [height]="height"
+          [animation]="animation"
+          (load)="load($event)"
+          [segmentCount]="segmentcount2"
+        >
+        </ejs-progressbar>
+      </div>
+      <div class="progress-text-align">Segment</div>
+    </div>
+  </div>
+  <div class="row" align="center">
+    <button
+      id="reLoad"
+      (click)="onClick()"
+      class="e-control e-btn e-lib e-outline e-primary"
+    >
+      Reload
+    </button>
+  </div>
+</div>
+<style>
+  #control-container {
+      padding: 0px !important;
+  }
+  .progress-text-align {
+      font-family: Roboto-Regular;
+      font-size: 14px;
+      color: #3D3E3C;
+  }
+  #reLoad {
+      border-radius: 4px;
+      text-transform: capitalize;
+      margin-top: 3%;
+  }
+</style>
