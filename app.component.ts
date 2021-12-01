@@ -48,10 +48,7 @@ export class AppComponent {
   @ViewChild('circular3')
   public circular3: ProgressBar;
   public onClick = () => {
-    this.circular.refresh();
-    this.circular1.refresh();
     this.circular2.refresh();
-    this.circular3.refresh();
   };
   public annotationColors: string[] = [
     '#e91e63',
